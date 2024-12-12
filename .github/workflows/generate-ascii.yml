@@ -24,30 +24,4 @@ jobs:
         runs_on: ubuntu_latest
         steps:
         - name: Read file
-          run: echo "Deploying......"
-
-
-
-
-
-
-
-
-
-
-
-
-    ascii_job:
-        runs-on: ubuntu-latest
-        steps:
-        - name: checkout Repo
-          uses: actions/checkout@v4
-
-        - name: List Repo files
-          run: ls -ltra
-
-        - name: Executing shell script
-          run: |
-              chmod +x ascii-script.sh
-              ./ascii-script.sh
-         
+          run: echo "Deploying......"     
